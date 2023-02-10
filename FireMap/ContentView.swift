@@ -8,12 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    var model = CityFireModel()
     var body: some View {
         VStack {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
+            Button("Click") {model.cityFireRequest()}
         }
         .padding()
     }

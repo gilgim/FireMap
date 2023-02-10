@@ -14,6 +14,12 @@
 		C368E3B62994E2DF009058CF /* FireMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3B52994E2DF009058CF /* FireMapTests.swift */; };
 		C368E3C02994E2DF009058CF /* FireMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3BF2994E2DF009058CF /* FireMapUITests.swift */; };
 		C368E3C22994E2DF009058CF /* FireMapUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3C12994E2DF009058CF /* FireMapUITestsLaunchTests.swift */; };
+		C368E3D02994E3B9009058CF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3CF2994E3B9009058CF /* Network.swift */; };
+		C368E3D22994E407009058CF /* URI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3D12994E407009058CF /* URI.swift */; };
+		C368E3D42994E650009058CF /* RequestDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3D32994E650009058CF /* RequestDatas.swift */; };
+		C368E3D62994E65A009058CF /* ResponseDatas.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3D52994E65A009058CF /* ResponseDatas.swift */; };
+		C368E3D82995C3D7009058CF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3D72995C3D7009058CF /* Util.swift */; };
+		C368E3DB2995CBB8009058CF /* CityFireModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C368E3DA2995CBB8009058CF /* CityFireModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +50,13 @@
 		C368E3BB2994E2DF009058CF /* FireMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C368E3BF2994E2DF009058CF /* FireMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireMapUITests.swift; sourceTree = "<group>"; };
 		C368E3C12994E2DF009058CF /* FireMapUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireMapUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C368E3CF2994E3B9009058CF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C368E3D12994E407009058CF /* URI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URI.swift; sourceTree = "<group>"; };
+		C368E3D32994E650009058CF /* RequestDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestDatas.swift; sourceTree = "<group>"; };
+		C368E3D52994E65A009058CF /* ResponseDatas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDatas.swift; sourceTree = "<group>"; };
+		C368E3D72995C3D7009058CF /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		C368E3DA2995CBB8009058CF /* CityFireModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityFireModel.swift; sourceTree = "<group>"; };
+		C368E3DC2995F243009058CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +107,12 @@
 		C368E3A32994E2DB009058CF /* FireMap */ = {
 			isa = PBXGroup;
 			children = (
+				C368E3DC2995F243009058CF /* Info.plist */,
 				C368E3A42994E2DB009058CF /* FireMapApp.swift */,
 				C368E3A62994E2DB009058CF /* ContentView.swift */,
+				C368E3D72995C3D7009058CF /* Util.swift */,
+				C368E3D92995CB95009058CF /* CityFire */,
+				C368E3CE2994E34A009058CF /* Network */,
 				C368E3A82994E2DF009058CF /* Assets.xcassets */,
 				C368E3AA2994E2DF009058CF /* Preview Content */,
 			);
@@ -125,6 +142,25 @@
 				C368E3C12994E2DF009058CF /* FireMapUITestsLaunchTests.swift */,
 			);
 			path = FireMapUITests;
+			sourceTree = "<group>";
+		};
+		C368E3CE2994E34A009058CF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C368E3CF2994E3B9009058CF /* Network.swift */,
+				C368E3D12994E407009058CF /* URI.swift */,
+				C368E3D32994E650009058CF /* RequestDatas.swift */,
+				C368E3D52994E65A009058CF /* ResponseDatas.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C368E3D92995CB95009058CF /* CityFire */ = {
+			isa = PBXGroup;
+			children = (
+				C368E3DA2995CBB8009058CF /* CityFireModel.swift */,
+			);
+			path = CityFire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +294,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C368E3A72994E2DB009058CF /* ContentView.swift in Sources */,
+				C368E3DB2995CBB8009058CF /* CityFireModel.swift in Sources */,
+				C368E3D02994E3B9009058CF /* Network.swift in Sources */,
+				C368E3D42994E650009058CF /* RequestDatas.swift in Sources */,
 				C368E3A52994E2DB009058CF /* FireMapApp.swift in Sources */,
+				C368E3D82995C3D7009058CF /* Util.swift in Sources */,
+				C368E3D62994E65A009058CF /* ResponseDatas.swift in Sources */,
+				C368E3D22994E407009058CF /* URI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +462,7 @@
 				DEVELOPMENT_TEAM = 3RPG64SDVF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -449,6 +492,7 @@
 				DEVELOPMENT_TEAM = 3RPG64SDVF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireMap/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
