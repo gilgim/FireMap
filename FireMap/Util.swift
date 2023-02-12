@@ -14,4 +14,7 @@ class Util {
         print("Function Name: \(function)")
         print("line: \(line)")
     }
+	static func custom_print(title: String) {
+		print("===== \(title) =====")
+	}
 }
